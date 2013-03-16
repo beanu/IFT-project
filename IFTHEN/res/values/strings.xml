@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IF THEN</string>
+    <string name="menu_settings">Settings</string>
+    <string name="_if">如果</string>
+    <string name="_then">THEN</string>
+    <string name="sender">Sender</string>
+    <string name="hashtag">HashTag</string>
+    <string name="ok">OK</string>
+    <string name="display_edittext">display your info</string>
+
+    <!-- 首页 -->
+    <string name="add">添加</string>
+
+</resources>

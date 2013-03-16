@@ -1,0 +1,13 @@
+option java_package = "com.beanu.ifthen.bean";
+option java_outer_classname = "IfThenBean";
+
+message AReceiveSms{
+	optional string sender=1;
+	optional string hashTag = 2;
+}
+
+message Sms{
+	optional string sender = 1;
+	optional string content = 2;
+	optional string sendTime = 3;
+}
