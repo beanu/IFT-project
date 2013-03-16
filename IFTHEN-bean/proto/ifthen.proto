@@ -1,5 +1,5 @@
 option java_package = "com.beanu.ifthen.bean";
-option java_outer_classname = "IfThenBean";
+option java_outer_classname = "IFTBean";
 
 message AReceiveSms{
 	optional string sender=1;

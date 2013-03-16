@@ -1,6 +1,12 @@
 package com.beanu.ifthen.bean;
 
-public class IFTItem {
+/**
+ * 数据库存储单个实例
+ * 
+ * @author beanu
+ * 
+ */
+public class DBItem {
 	private long id;
 	private String a;
 	private String aType;

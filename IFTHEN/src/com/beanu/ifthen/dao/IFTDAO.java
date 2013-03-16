@@ -7,6 +7,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.beanu.ifthen.bean.DBItem;
+
 public class IFTDAO {
 	// Database fields
 	private SQLiteDatabase mDatabase;
@@ -21,7 +23,7 @@ public class IFTDAO {
 		mDatabase = mSQLitehelper.getWritableDatabase();
 	}
 
-	public void insert(IFTItem item, String type) {
+	public void insert(DBItem item, String type) {
 		mDatabase = mSQLitehelper.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		// values.put(SQLiteUtil.IFTHEN_ID, item.getId());
@@ -34,7 +36,7 @@ public class IFTDAO {
 		mDatabase.insert(SQLiteUtil.TABLE_IFTHEN, null, values);
 	}
 
-	public void delete(IFTItem item) {
+	public void delete(DBItem item) {
 		mDatabase = mSQLitehelper.getWritableDatabase();
 		long id = item.getId();
 		mDatabase.delete(SQLiteUtil.TABLE_IFTHEN, SQLiteUtil.IFTHEN_ID + " = "
@@ -46,16 +48,16 @@ public class IFTDAO {
 		mDatabase.delete(SQLiteUtil.TABLE_IFTHEN, null, null);
 	}
 
-	public List<IFTItem> getAll() {
+	public List<DBItem> getAll() {
 		mDatabase = mSQLitehelper.getWritableDatabase();
-		List<IFTItem> list = new ArrayList<IFTItem>();
+		List<DBItem> list = new ArrayList<DBItem>();
 
 		Cursor cursor = mDatabase.query(SQLiteUtil.TABLE_IFTHEN, allColumns,
 				null, null, null, null, null);
 
 		cursor.moveToFirst();
 		while (!cursor.isAfterLast()) {
-			IFTItem item = cursorToItem(cursor);
+			DBItem item = cursorToItem(cursor);
 			list.add(item);
 			cursor.moveToNext();
 		}
@@ -64,8 +66,8 @@ public class IFTDAO {
 		return list;
 	}
 
-	private IFTItem cursorToItem(Cursor cursor) {
-		IFTItem item = new IFTItem();
+	private DBItem cursorToItem(Cursor cursor) {
+		DBItem item = new DBItem();
 		item.setId(cursor.getLong(0));
 		item.setA(cursor.getString(1));
 		item.setaType(cursor.getString(2));

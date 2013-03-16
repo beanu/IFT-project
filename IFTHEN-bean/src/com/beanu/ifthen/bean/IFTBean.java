@@ -3,8 +3,8 @@
 
 package com.beanu.ifthen.bean;
 
-public final class IfThenBean {
-  private IfThenBean() {}
+public final class IFTBean {
+  private IFTBean() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
@@ -116,14 +116,14 @@ public final class IfThenBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.beanu.ifthen.bean.IfThenBean.internal_static_AReceiveSms_descriptor;
+      return com.beanu.ifthen.bean.IFTBean.internal_static_AReceiveSms_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.beanu.ifthen.bean.IfThenBean.internal_static_AReceiveSms_fieldAccessorTable
+      return com.beanu.ifthen.bean.IFTBean.internal_static_AReceiveSms_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.beanu.ifthen.bean.IfThenBean.AReceiveSms.class, com.beanu.ifthen.bean.IfThenBean.AReceiveSms.Builder.class);
+              com.beanu.ifthen.bean.IFTBean.AReceiveSms.class, com.beanu.ifthen.bean.IFTBean.AReceiveSms.Builder.class);
     }
 
     public static com.google.protobuf.Parser<AReceiveSms> PARSER =
@@ -279,53 +279,53 @@ public final class IfThenBean {
       return super.writeReplace();
     }
 
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(byte[] data)
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(java.io.InputStream input)
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseDelimitedFrom(java.io.InputStream input)
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseDelimitedFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.AReceiveSms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.AReceiveSms parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -334,7 +334,7 @@ public final class IfThenBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.beanu.ifthen.bean.IfThenBean.AReceiveSms prototype) {
+    public static Builder newBuilder(com.beanu.ifthen.bean.IFTBean.AReceiveSms prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -350,20 +350,20 @@ public final class IfThenBean {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.beanu.ifthen.bean.IfThenBean.AReceiveSmsOrBuilder {
+       implements com.beanu.ifthen.bean.IFTBean.AReceiveSmsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_AReceiveSms_descriptor;
+        return com.beanu.ifthen.bean.IFTBean.internal_static_AReceiveSms_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_AReceiveSms_fieldAccessorTable
+        return com.beanu.ifthen.bean.IFTBean.internal_static_AReceiveSms_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.beanu.ifthen.bean.IfThenBean.AReceiveSms.class, com.beanu.ifthen.bean.IfThenBean.AReceiveSms.Builder.class);
+                com.beanu.ifthen.bean.IFTBean.AReceiveSms.class, com.beanu.ifthen.bean.IFTBean.AReceiveSms.Builder.class);
       }
 
-      // Construct using com.beanu.ifthen.bean.IfThenBean.AReceiveSms.newBuilder()
+      // Construct using com.beanu.ifthen.bean.IFTBean.AReceiveSms.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -396,23 +396,23 @@ public final class IfThenBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_AReceiveSms_descriptor;
+        return com.beanu.ifthen.bean.IFTBean.internal_static_AReceiveSms_descriptor;
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.AReceiveSms getDefaultInstanceForType() {
-        return com.beanu.ifthen.bean.IfThenBean.AReceiveSms.getDefaultInstance();
+      public com.beanu.ifthen.bean.IFTBean.AReceiveSms getDefaultInstanceForType() {
+        return com.beanu.ifthen.bean.IFTBean.AReceiveSms.getDefaultInstance();
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.AReceiveSms build() {
-        com.beanu.ifthen.bean.IfThenBean.AReceiveSms result = buildPartial();
+      public com.beanu.ifthen.bean.IFTBean.AReceiveSms build() {
+        com.beanu.ifthen.bean.IFTBean.AReceiveSms result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.AReceiveSms buildPartial() {
-        com.beanu.ifthen.bean.IfThenBean.AReceiveSms result = new com.beanu.ifthen.bean.IfThenBean.AReceiveSms(this);
+      public com.beanu.ifthen.bean.IFTBean.AReceiveSms buildPartial() {
+        com.beanu.ifthen.bean.IFTBean.AReceiveSms result = new com.beanu.ifthen.bean.IFTBean.AReceiveSms(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -429,16 +429,16 @@ public final class IfThenBean {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.beanu.ifthen.bean.IfThenBean.AReceiveSms) {
-          return mergeFrom((com.beanu.ifthen.bean.IfThenBean.AReceiveSms)other);
+        if (other instanceof com.beanu.ifthen.bean.IFTBean.AReceiveSms) {
+          return mergeFrom((com.beanu.ifthen.bean.IFTBean.AReceiveSms)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.beanu.ifthen.bean.IfThenBean.AReceiveSms other) {
-        if (other == com.beanu.ifthen.bean.IfThenBean.AReceiveSms.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.beanu.ifthen.bean.IFTBean.AReceiveSms other) {
+        if (other == com.beanu.ifthen.bean.IFTBean.AReceiveSms.getDefaultInstance()) return this;
         if (other.hasSender()) {
           bitField0_ |= 0x00000001;
           sender_ = other.sender_;
@@ -461,11 +461,11 @@ public final class IfThenBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.beanu.ifthen.bean.IfThenBean.AReceiveSms parsedMessage = null;
+        com.beanu.ifthen.bean.IFTBean.AReceiveSms parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.beanu.ifthen.bean.IfThenBean.AReceiveSms) e.getUnfinishedMessage();
+          parsedMessage = (com.beanu.ifthen.bean.IFTBean.AReceiveSms) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -763,14 +763,14 @@ public final class IfThenBean {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.beanu.ifthen.bean.IfThenBean.internal_static_Sms_descriptor;
+      return com.beanu.ifthen.bean.IFTBean.internal_static_Sms_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.beanu.ifthen.bean.IfThenBean.internal_static_Sms_fieldAccessorTable
+      return com.beanu.ifthen.bean.IFTBean.internal_static_Sms_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.beanu.ifthen.bean.IfThenBean.Sms.class, com.beanu.ifthen.bean.IfThenBean.Sms.Builder.class);
+              com.beanu.ifthen.bean.IFTBean.Sms.class, com.beanu.ifthen.bean.IFTBean.Sms.Builder.class);
     }
 
     public static com.google.protobuf.Parser<Sms> PARSER =
@@ -977,53 +977,53 @@ public final class IfThenBean {
       return super.writeReplace();
     }
 
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(byte[] data)
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(java.io.InputStream input)
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseDelimitedFrom(java.io.InputStream input)
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseDelimitedFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static com.beanu.ifthen.bean.IfThenBean.Sms parseFrom(
+    public static com.beanu.ifthen.bean.IFTBean.Sms parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1032,7 +1032,7 @@ public final class IfThenBean {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.beanu.ifthen.bean.IfThenBean.Sms prototype) {
+    public static Builder newBuilder(com.beanu.ifthen.bean.IFTBean.Sms prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1048,20 +1048,20 @@ public final class IfThenBean {
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.beanu.ifthen.bean.IfThenBean.SmsOrBuilder {
+       implements com.beanu.ifthen.bean.IFTBean.SmsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_Sms_descriptor;
+        return com.beanu.ifthen.bean.IFTBean.internal_static_Sms_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_Sms_fieldAccessorTable
+        return com.beanu.ifthen.bean.IFTBean.internal_static_Sms_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.beanu.ifthen.bean.IfThenBean.Sms.class, com.beanu.ifthen.bean.IfThenBean.Sms.Builder.class);
+                com.beanu.ifthen.bean.IFTBean.Sms.class, com.beanu.ifthen.bean.IFTBean.Sms.Builder.class);
       }
 
-      // Construct using com.beanu.ifthen.bean.IfThenBean.Sms.newBuilder()
+      // Construct using com.beanu.ifthen.bean.IFTBean.Sms.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1096,23 +1096,23 @@ public final class IfThenBean {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.beanu.ifthen.bean.IfThenBean.internal_static_Sms_descriptor;
+        return com.beanu.ifthen.bean.IFTBean.internal_static_Sms_descriptor;
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.Sms getDefaultInstanceForType() {
-        return com.beanu.ifthen.bean.IfThenBean.Sms.getDefaultInstance();
+      public com.beanu.ifthen.bean.IFTBean.Sms getDefaultInstanceForType() {
+        return com.beanu.ifthen.bean.IFTBean.Sms.getDefaultInstance();
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.Sms build() {
-        com.beanu.ifthen.bean.IfThenBean.Sms result = buildPartial();
+      public com.beanu.ifthen.bean.IFTBean.Sms build() {
+        com.beanu.ifthen.bean.IFTBean.Sms result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.beanu.ifthen.bean.IfThenBean.Sms buildPartial() {
-        com.beanu.ifthen.bean.IfThenBean.Sms result = new com.beanu.ifthen.bean.IfThenBean.Sms(this);
+      public com.beanu.ifthen.bean.IFTBean.Sms buildPartial() {
+        com.beanu.ifthen.bean.IFTBean.Sms result = new com.beanu.ifthen.bean.IFTBean.Sms(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1133,16 +1133,16 @@ public final class IfThenBean {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.beanu.ifthen.bean.IfThenBean.Sms) {
-          return mergeFrom((com.beanu.ifthen.bean.IfThenBean.Sms)other);
+        if (other instanceof com.beanu.ifthen.bean.IFTBean.Sms) {
+          return mergeFrom((com.beanu.ifthen.bean.IFTBean.Sms)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.beanu.ifthen.bean.IfThenBean.Sms other) {
-        if (other == com.beanu.ifthen.bean.IfThenBean.Sms.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.beanu.ifthen.bean.IFTBean.Sms other) {
+        if (other == com.beanu.ifthen.bean.IFTBean.Sms.getDefaultInstance()) return this;
         if (other.hasSender()) {
           bitField0_ |= 0x00000001;
           sender_ = other.sender_;
@@ -1170,11 +1170,11 @@ public final class IfThenBean {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.beanu.ifthen.bean.IfThenBean.Sms parsedMessage = null;
+        com.beanu.ifthen.bean.IFTBean.Sms parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.beanu.ifthen.bean.IfThenBean.Sms) e.getUnfinishedMessage();
+          parsedMessage = (com.beanu.ifthen.bean.IFTBean.Sms) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1440,7 +1440,7 @@ public final class IfThenBean {
       "\n\014ifthen.proto\".\n\013AReceiveSms\022\016\n\006sender\030" +
       "\001 \001(\t\022\017\n\007hashTag\030\002 \001(\t\"8\n\003Sms\022\016\n\006sender\030" +
       "\001 \001(\t\022\017\n\007content\030\002 \001(\t\022\020\n\010sendTime\030\003 \001(\t" +
-      "B#\n\025com.beanu.ifthen.beanB\nIfThenBean"
+      "B \n\025com.beanu.ifthen.beanB\007IFTBean"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
