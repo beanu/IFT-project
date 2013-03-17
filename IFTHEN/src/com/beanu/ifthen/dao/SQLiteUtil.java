@@ -16,6 +16,7 @@ public class SQLiteUtil extends SQLiteOpenHelper {
 	public static final String IFTHEN_ID = "id";
 	public static final String IFTHEN_A = "a";
 	public static final String IFTHEN_ATYPE = "atype";
+	public static final String IFTHEN_CONTENT = "content";
 	public static final String IFTHEN_B = "b";
 	public static final String IFTHEN_BTYPE = "btype";
 	public static final String IFTHEN_STATE = "state";
@@ -25,14 +26,18 @@ public class SQLiteUtil extends SQLiteOpenHelper {
 			+ TABLE_IFTHEN
 			+ " ("
 			+ IFTHEN_ID
-			+ " integer primary key autoincrement,"
+			+ " integer primary key,"
 			+ IFTHEN_A
 			+ " varchar,"
 			+ IFTHEN_ATYPE
 			+ " varchar,"
+			+ IFTHEN_CONTENT
+			+ " varchar,"
 			+ IFTHEN_B
 			+ " varchar,"
-			+ IFTHEN_BTYPE + " varchar," + IFTHEN_STATE + " varchar)";
+			+ IFTHEN_BTYPE
+			+ " varchar,"
+			+ IFTHEN_STATE + " varchar)";
 
 	private SQLiteUtil(Context context) {
 		super(context, DB_NAME, null, DATABASE_VERSION);

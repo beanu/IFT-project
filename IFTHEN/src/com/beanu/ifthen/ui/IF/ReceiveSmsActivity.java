@@ -8,7 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.beanu.ifthen.R;
+import com.beanu.ifthen.bean.DBItem;
+import com.beanu.ifthen.bean.IFTBean.AReceiveSms;
+import com.beanu.ifthen.bean.IFTBean.Sms;
 import com.beanu.ifthen.core.BaseActivity;
+import com.beanu.ifthen.cryption.Des;
+import com.beanu.ifthen.dao.Dao;
 import com.beanu.ifthen.ui.THENActivity;
 
 public class ReceiveSmsActivity extends BaseActivity {
@@ -28,22 +33,20 @@ public class ReceiveSmsActivity extends BaseActivity {
 		btn.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				// Trigger tri =
-				// Dao.instance.createTri(ReceiveSms.class.getName());
-				// tri = tri
-				// .toBuilder()
-				// .setReceiveSms(
-				// ReceiveSms.newBuilder().setSender(txt_sender.getText().toString())
-				// .setHashtag(txt_hashtag.getText().toString()).build())
-				// .setIntent(Sms.class.getName()).build();
-				// Dao.instance.saveTri(tri);
-				//
-				// Helper.addObserver(new ObserverSmsReceive(tri.getId(),
-				// SubjectSmsReceive.getInstance()));
-				//
+				DBItem item = new DBItem();
+				item.setId(System.currentTimeMillis());
+				item.setaType(AReceiveSms.class.getName());
+				item.setContent(Sms.class.getName());
+
+				AReceiveSms ars = AReceiveSms.newBuilder()
+						.setSender(txt_sender.getText().toString())
+						.setHashTag(txt_hashtag.getText().toString()).build();
+				item.setA(Des.encryptDES(ars.toByteArray(), Des.KEY));
+				Dao.instance.saveDBItem(item);
+
 				Intent intent = new Intent(ReceiveSmsActivity.this,
 						THENActivity.class);
-				// intent.putExtra("triggerId", tri.getId());
+				intent.putExtra("id", item.getId());
 				startActivity(intent);
 			}
 		});

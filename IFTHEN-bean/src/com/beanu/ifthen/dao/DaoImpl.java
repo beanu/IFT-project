@@ -2,18 +2,29 @@ package com.beanu.ifthen.dao;
 
 import com.beanu.ifthen.bean.DBItem;
 
+/**
+ * 实现接口
+ * 
+ * @author beanu
+ * 
+ */
+
 public class DaoImpl implements Dao {
 
-	@Override
-	public void saveDBItem(DBItem item) {
-		// TODO Auto-generated method stub
+	private DaoIO io;
 
+	public void setIO(DaoIO io) {
+		this.io = io;
 	}
 
 	@Override
-	public DBItem getIFT(long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public void saveDBItem(DBItem item) {
+		this.io.saveDBItem(item);
+	}
+
+	@Override
+	public DBItem getDBItem(long id) {
+		return this.io.getDBItem(id);
 	}
 
 }

@@ -9,9 +9,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.beanu.ifthen.R;
-import com.beanu.ifthen.adapter.THENAdapter;
 import com.beanu.ifthen.ui.IF.ReceiveSmsActivity;
 import com.beanu.ifthen.ui.THEN.DisplayActivity;
+import com.beanu.ifthen.ui.adapter.THENAdapter;
 
 public class THENActivity extends Activity {
 	private GridView trigger_grid;
@@ -20,7 +20,7 @@ public class THENActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.then_trigger);
-		final long triggerId = getIntent().getLongExtra("triggerId", 0);
+		final long triggerId = getIntent().getLongExtra("id", 0);
 
 		trigger_grid = (GridView) findViewById(R.id.then_trigger_gridView);
 		trigger_grid.setAdapter(new THENAdapter(this));

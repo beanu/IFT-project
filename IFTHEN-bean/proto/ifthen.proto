@@ -11,3 +11,7 @@ message Sms{
 	optional string content = 2;
 	optional string sendTime = 3;
 }
+
+message BDisplay{
+	optional string content =1;
+}

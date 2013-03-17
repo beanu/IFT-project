@@ -1,15 +1,20 @@
 package com.beanu.ifthen.bean;
 
+import java.io.Serializable;
+
 /**
  * 数据库存储单个实例
  * 
  * @author beanu
  * 
  */
-public class DBItem {
+public class DBItem implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private long id;
 	private String a;
 	private String aType;
+	private String content;
 	private String b;
 	private String bType;
 	private String state;
@@ -60,6 +65,14 @@ public class DBItem {
 
 	public void setState(String state) {
 		this.state = state;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 }

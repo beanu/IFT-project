@@ -1,4 +1,4 @@
-package com.beanu.ifthen.adapter;
+package com.beanu.ifthen.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,26 +9,31 @@ import android.widget.ImageView;
 
 import com.beanu.ifthen.R;
 
-public class THENAdapter extends BaseAdapter {
+public class IFAdapter extends BaseAdapter {
 	
 	private ImageView image;
 	private String[] mText;
 	private Integer[] mThumbIds;
 	private LayoutInflater mlinflater;
 	
-	public THENAdapter(Context context){
-		Integer[] arrayOfInteger = new Integer[3];
+	public IFAdapter(Context context){
+		Integer[] arrayOfInteger = new Integer[5];
 		arrayOfInteger[0] = Integer.valueOf(R.drawable.sms);
-		arrayOfInteger[1] = Integer.valueOf(R.drawable.call);
-		arrayOfInteger[2] = Integer.valueOf(R.drawable.display);
+		arrayOfInteger[1] = Integer.valueOf(R.drawable.misscall);
+		arrayOfInteger[2] = Integer.valueOf(R.drawable.tool);
+		arrayOfInteger[3] = Integer.valueOf(R.drawable.sensor);
+		arrayOfInteger[4] = Integer.valueOf(R.drawable.lbs);
 		this.mThumbIds = arrayOfInteger;
-		String[] arrayOfString = new String[3];
-		arrayOfString[0] = "短信";
-		arrayOfString[1] = "打电话";
-		arrayOfString[2] = "显示";
-		this.mText = arrayOfString;
-		this.mlinflater = LayoutInflater.from(context);
 		
+		String[] arrayOfString = new String[5];
+		arrayOfString[0] = "短信";
+		arrayOfString[1] = "未接电话";
+		arrayOfString[2] = "显示";
+		arrayOfString[3] = "传感器";
+		arrayOfString[4] = "定位";
+		this.mText = arrayOfString;
+		
+		this.mlinflater = LayoutInflater.from(context);
 	}
 
 	public int getCount() {

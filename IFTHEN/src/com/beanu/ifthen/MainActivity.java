@@ -9,6 +9,9 @@ import android.widget.ListView;
 
 import com.actionbarsherlock.view.Menu;
 import com.beanu.ifthen.core.BaseActivity;
+import com.beanu.ifthen.dao.DBAdapter;
+import com.beanu.ifthen.dao.Dao;
+import com.beanu.ifthen.dao.DaoImpl;
 import com.beanu.ifthen.ui.IFActivity;
 
 public class MainActivity extends BaseActivity {
@@ -19,6 +22,11 @@ public class MainActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		DBAdapter adapter = new DBAdapter(getApplicationContext());
+		DaoImpl impl = (DaoImpl) Dao.instance;
+		impl.setIO(adapter);
+
 		setContentView(R.layout.activity_main);
 		lview = (ListView) findViewById(R.id.main_listView);
 		lview.setDivider(null);
@@ -28,8 +36,7 @@ public class MainActivity extends BaseActivity {
 
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,
-						IFActivity.class);
+				Intent intent = new Intent(MainActivity.this, IFActivity.class);
 				startActivity(intent);
 			}
 		});

@@ -8,9 +8,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.beanu.ifthen.R;
-import com.beanu.ifthen.adapter.IFAdapter;
 import com.beanu.ifthen.core.BaseActivity;
 import com.beanu.ifthen.ui.IF.ReceiveSmsActivity;
+import com.beanu.ifthen.ui.adapter.IFAdapter;
 
 /**
  * 第一步 IF
