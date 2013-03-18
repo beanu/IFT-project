@@ -50,8 +50,8 @@ public class IFTDAO {
 	public DBItem select(long id) {
 		mDatabase = mSQLitehelper.getWritableDatabase();
 		Cursor cursor = mDatabase.query(SQLiteUtil.TABLE_IFTHEN, allColumns,
-				SQLiteUtil.IFTHEN_ID, new String[] { String.valueOf(id) },
-				null, null, null);
+				SQLiteUtil.IFTHEN_ID + "=?",
+				new String[] { String.valueOf(id) }, null, null, null);
 		DBItem item = null;
 		if (cursor.moveToNext()) {
 			item = cursorToItem(cursor);
@@ -71,8 +71,8 @@ public class IFTDAO {
 		values.put(SQLiteUtil.IFTHEN_BTYPE, item.getbType());
 		values.put(SQLiteUtil.IFTHEN_STATE, item.getState());
 
-		mDatabase.update(SQLiteUtil.TABLE_IFTHEN, values, SQLiteUtil.IFTHEN_ID,
-				new String[] { String.valueOf(item.getId()) });
+		mDatabase.update(SQLiteUtil.TABLE_IFTHEN, values, SQLiteUtil.IFTHEN_ID
+				+ "=?", new String[] { String.valueOf(item.getId()) });
 		mDatabase.close();
 	}
 

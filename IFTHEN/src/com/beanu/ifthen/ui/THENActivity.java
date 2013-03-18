@@ -48,7 +48,7 @@ public class THENActivity extends Activity {
 
 				}
 				if (null != intent) {
-					intent.putExtra("triggerId", triggerId);
+					intent.putExtra("id", triggerId);
 					// Log.d("triggerId:"+triggerId);
 					startActivity(intent);
 				}
