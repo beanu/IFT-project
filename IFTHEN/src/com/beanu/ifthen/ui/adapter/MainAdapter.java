@@ -20,8 +20,8 @@ public class MainAdapter extends CursorAdapter {
 
 	private LayoutInflater mInflater;
 
-	public MainAdapter(Context context, Cursor c, int flags) {
-		super(context, c, flags);
+	public MainAdapter(Context context, Cursor c) {
+		super(context, c);
 		mInflater = LayoutInflater.from(context);
 	}
 

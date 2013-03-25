@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class SQLiteUtil extends SQLiteOpenHelper {
-	private static SQLiteUtil mInstance = null;
+
 	private static final int DATABASE_VERSION = 1;
 
 	public static final String ENCODE = "UTF_8";
@@ -35,20 +35,10 @@ public class SQLiteUtil extends SQLiteOpenHelper {
 			+ " varchar,"
 			+ IFTHEN_B
 			+ " varchar,"
-			+ IFTHEN_BTYPE
-			+ " varchar,"
-			+ IFTHEN_STATE + " varchar)";
+			+ IFTHEN_BTYPE + " varchar," + IFTHEN_STATE + " varchar)";
 
-	private SQLiteUtil(Context context) {
+	public SQLiteUtil(Context context) {
 		super(context, DB_NAME, null, DATABASE_VERSION);
-	}
-
-	/** 单例模式 **/
-	public static synchronized SQLiteUtil getInstance(Context context) {
-		if (mInstance == null) {
-			mInstance = new SQLiteUtil(context);
-		}
-		return mInstance;
 	}
 
 	@Override
